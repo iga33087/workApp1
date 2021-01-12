@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500;900&display=swap');
 $color1:#57008e;
 $color2:#d30000;
 $xs: 360px;
@@ -20,11 +21,15 @@ $xl: 1200px;
 html,body {
   margin: 0;
   padding: 0;
-  font-family: 'Microsoft YaHei';
-  background-image: url("../img/bg.png");
+  font-family: 'Noto Sans SC','Microsoft YaHei';
+  background-image: url("../img/homeBg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-position: 0 -50px;
+}
+
+a {
+  text-decoration: none;
+  color:#000;
 }
 
 .content {
@@ -52,19 +57,20 @@ img {
 }
 
 .header {
-  height: 100px;
+  height: 200px;
   background-color: #f00;
   background-image: url("../img/header.png");
   background-repeat: no-repeat;
-  background-size: 100% 100px;
+  background-size: 100% 200px;
   display: flex;
-  margin: 0 0 50px 0;
   @include rwd($xl) {
+    height: 100px;
     padding: 0 10px;
-    margin: 0 0 20px 0;
+    background-size: 100% 100px;
   }
   .headerBox {
     width: 1200px;
+    box-sizing: border-box;
     display: flex;
     color:#fff;
     align-items: center;
@@ -73,18 +79,22 @@ img {
   }
   
   .headerBoxLogo {
-    width: 80px;
-    height: 80px;
+    display: flex;
+    align-items: center;
   }
   
   .headerBoxLogoImg {
-    width: 80px;
-    height: 60px;
+    width: 134px;
+    height: 107px;
+    margin: 0 22px 0 0;
+    @include rwd($xl) {
+      width: 80px;
+      height: 80px;
+    }
   }
-  
+
   .headerBoxLogoText {
-    height: 20px;
-    text-align: center;
+    font-size: 2rem;
     font-weight: bold;
   }
   
@@ -104,22 +114,22 @@ img {
   }
   
   .headerBoxMenuItem {
-    margin: 0 20px 0 0;
+    font-size: 1.5rem;
+    margin: 0 45px 0 0;
     cursor: pointer;
   }
 }
 
 .footer {
-  height: 100px;
+  height: 200px;
   background-image: url("../img/footer.png");
   background-repeat: no-repeat;
-  background-size: 100% 100px;
+  background-size: 100% 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   color:#fff;
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 30px;
   @include rwd($xl) {
     font-size: 1rem;
   }
@@ -130,9 +140,6 @@ img {
   align-items: center;
   justify-content: center;
   margin: 0 0 30px 0;
-  @include rwd($lg) {
-    display: block;
-  }
   .infoBoxDownload {
     display: flex;
   }
@@ -212,5 +219,73 @@ img {
 }
 
 .title {
-  margin: 0 0 20px 0;
+  margin: 20px 0 20px 0;
+}
+
+.robot {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom:20px;
+  right:20px;
+  z-index: 98;
+  cursor: pointer;
+  .robotImg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.homeCarousel {
+  margin: 0 0 70px 0;
+  .homeCarouselItem {
+    height: 100%;
+    background: rgba(196, 196, 196, 0.6);
+  }
+}
+
+.homeBox {
+  margin: 0 0 70px 0;
+  .homeBoxTitle {
+    text-align: center;
+    font-size: 40px;
+  }
+  .homeBoxTitle {
+    text-align: center;
+    font-size: 40px;
+    margin: 0 0 32px 0;
+  }
+  .homeBoxContent {
+    display: flex;
+    padding: 40px 70px;
+    background-color: #C4C4C4;
+    @include rwd($xl) {
+      padding: 0;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.homeBoxContentItemType1 {
+  padding: 20px 12px;
+  background-color: #f00;
+  margin: 0 42px 0 0;
+  @include rwd($lg) {
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .homeBoxContentItemType1Img {
+    width: 150px;
+    height: 130px;
+    margin: 0 0 14px 0;
+    @include rwd($xl) {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .homeBoxContentItemType1Text {
+    font-size: 23px;
+    text-align: center;
+  }
 }
