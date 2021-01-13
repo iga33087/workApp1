@@ -2,7 +2,7 @@
   <div class="header">
     <div class="headerBox">
       <div class="headerBoxLogo">
-        <img class="headerBoxLogoImg" :src="icon">
+        <img class="headerBoxLogoImg" :src="require('@/assets/img/logo/'+icon)">
         <div class="headerBoxLogoText">久乐娱乐</div>
       </div>
       <div class="headerBoxTitle" v-if="title">绿色全民娱乐 公平竞技棋牌APP</div>

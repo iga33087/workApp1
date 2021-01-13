@@ -1,9 +1,9 @@
 <template>
   <div class="page1">
-    <Header :icon="'/img/gameLogo1.png'" />
+    <Header :icon="'gameLogo1.png'" />
     <div class="content">
-        <img class="title" src="img/title.png">
-        <img class="detail" src="img/detail.png">
+        <img class="title" src="@/assets/img/title.png">
+        <img class="detail" src="@/assets/img/detail.png">
         <Info/>
         <div class="line1">喜欢游戏速度极快</div>
         <Screen/>

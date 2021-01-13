@@ -1,6 +1,6 @@
 <template>
   <div class="robot" @click="open">
-    <img class="robotImg" src="img/robot.png">
+    <img class="robotImg" src="@/assets/img/robot.png">
   </div>
 </template>
 

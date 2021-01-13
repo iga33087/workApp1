@@ -261,30 +261,44 @@ img {
 .homeBox {
   margin: 0 0 70px 0;
   .homeBoxTitle {
+    position: relative;
+  }
+  .homeBoxTitleText {
     text-align: center;
-    font-size: 40px;
+    font-size: 55px;
     background: $fontColor1;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  .homeBoxTitle {
-    text-align: center;
-    font-size: 40px;
     margin: 0 0 32px 0;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+  }
+  .homeBoxTitleShadow {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: -60px;
+    color:rgba(255,255,255,0.1);
+    position: relative;
+    font-weight: bold;
+    @include rwd($xl) {
+      display: none;
+    }
   }
   .homeBoxContent {
     display: flex;
     padding: 40px 70px;
     justify-content: space-between;
-    background-color: rgba(65,26,81,0.8);
     border-radius: 50px;
-    border: 1px solid #fff;
     background-size: 100% 100%;
+    background-color: rgba(61,22,74,0.8);
+    box-shadow: 0 0 10px #fff inset;
     @include rwd($xl) {
       padding: 0;
       flex-wrap: wrap;
       border: 0px;
       background-color: transparent;
+      box-shadow: 0 0 0;
     }
   }
   .homeBoxContent2 {
