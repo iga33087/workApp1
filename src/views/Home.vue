@@ -11,10 +11,7 @@
     </el-carousel>
     <div class="content">
       <div class="homeBox">
-        <div class="homeBoxTitle">
-          <div class="homeBoxTitleShadow">公平绿色竞技 棋牌APP第一选择</div>
-          <div class="homeBoxTitleText">公平绿色竞技 棋牌APP第一选择</div>
-        </div>
+        <HomeBoxTitle text="公平绿色竞技 棋牌APP第一选择"/>
         <div class="homeBoxContent">
           <router-link class="homeBoxContentItemType1" :to="{path:'/Page1'}">
             <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo1.png">
@@ -39,10 +36,7 @@
         </div>
       </div>
       <div class="homeBox">
-        <div class="homeBoxTitle">
-          <div class="homeBoxTitleShadow">纯绿色娱乐</div>
-          <div class="homeBoxTitleText">纯绿色娱乐</div>
-        </div>
+        <HomeBoxTitle text="纯绿色娱乐"/>
         <div class="homeBoxContent2">
           <div class="homeBoxContentItemType2">
             24小时技术客服支持<br>秒问秒回 火速处理
@@ -59,10 +53,7 @@
         </div>
       </div>
       <div class="homeBox">
-        <div class="homeBoxTitle">
-          <div class="homeBoxTitleShadow">享受反客为主的乐趣</div>
-          <div class="homeBoxTitleText">享受反客为主的乐趣</div>
-        </div>
+        <HomeBoxTitle text="享受反客为主的乐趣"/>
         <div class="homeBoxContent homeBoxContent3">
           <div class="homeBoxContentVideo"></div>
           <img class="homeBoxContentQR" src="@/assets/img/QR.jpg">
@@ -81,6 +72,7 @@
 <script>
 // @ is an alias to /src
 import Header from '@/components/Header.vue'
+import HomeBoxTitle from '@/components/HomeBoxTitle.vue'
 import Footer from '@/components/Footer.vue'
 import QRBox from '@/components/QRBox.vue'
 
@@ -97,7 +89,7 @@ export default {
     }
   },
   components: {
-    Header,Footer,QRBox
+    Header,HomeBoxTitle,Footer,QRBox
   },
   created() {
     document.body.style.backgroundImage="url('img/homeBg.png')"

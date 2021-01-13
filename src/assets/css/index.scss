@@ -41,7 +41,12 @@ a {
   @include rwd($xl) {
     width: 100%;
     box-sizing: border-box;
-    padding: 0 10px;
+    padding: 0 10%;
+  }
+  @include rwd($md) {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 6%;
   }
 }
 
@@ -241,7 +246,10 @@ img {
 
 .homeCarousel {
   margin: 0 0 70px 0;
-  box-shadow: 0 0 20px #000;
+  box-shadow: 0 0 30px #000;
+  @include rwd($md) {
+    margin: 0 0 32px 0;
+  }
   .homeCarouselItem {
     height: 100%;
     background: rgba(196, 196, 196, 0.6);
@@ -253,16 +261,13 @@ img {
   .el-carousel__container {
     height: 566px;
     @include rwd($xl) {
-      height: 300px;
+      height: 200px;
     }
   }
 }
 
-.homeBox {
-  margin: 0 0 70px 0;
-  .homeBoxTitle {
-    position: relative;
-  }
+.homeBoxTitle {
+  position: relative;
   .homeBoxTitleText {
     text-align: center;
     font-size: 55px;
@@ -273,6 +278,9 @@ img {
     position: relative;
     z-index: 2;
     font-weight: bold;
+    @include rwd($lg) {
+      font-size: 28px;
+    }
   }
   .homeBoxTitleShadow {
     text-align: center;
@@ -284,6 +292,13 @@ img {
     @include rwd($xl) {
       display: none;
     }
+  }
+}
+
+.homeBox {
+  margin: 0 0 70px 0;
+  @include rwd($md) {
+    margin: 0 0 32px 0;
   }
   .homeBoxContent {
     display: flex;
@@ -314,7 +329,8 @@ img {
     }
   }
   .homeBoxContent3 {
-    @include rwd($lg) {
+    display: flex;
+    @include rwd($md) {
       display: block;
     }
   }
@@ -389,7 +405,12 @@ img {
   background-size: 100% 100%;
   color:$fontColor2;
   @include rwd($xl) {
-    width: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  @include rwd($md) {
+    width: 148px;
+    height: 148px;
   }
 }
 
@@ -423,5 +444,27 @@ img {
   .QRboxInfoText {
     color:#fff;
     font-size: 26px;
+  }
+}
+
+.introduction {
+  .gameList {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 40px 0;
+  } 
+  .gameListItem {
+    width: 130px;
+    height: 115px;
+  }
+  .introductionContent {
+    padding: 40px 132px;
+    background: rgba(0, 0, 0, 0.29);
+    box-shadow: inset 0px -10px 4px rgba(0, 0, 0, 0.25), inset 0px 5px 4px #FFEF99;
+    border-radius: 60px;
+    font-size: 30px;
+    color:#fff;
+    overflow: hidden;
+    margin: 0 0 30px 0;
   }
 }
