@@ -56,7 +56,7 @@
         <HomeBoxTitle text="享受反客为主的乐趣"/>
         <div class="homeBoxContent homeBoxContent3">
           <video class="homeBoxContentVideo" controls>
-            <source src="@/assets/video/game.mp4" type="video/mp4">
+            <source src="@/assets/video/Home_movie.mp4" type="video/mp4">
           </video>
           <img class="homeBoxContentQR" src="@/assets/img/QR.jpg">
           <div class="homeBoxContentInfo">

@@ -115,10 +115,48 @@ img {
     }
   }
   
+  .headerBlack {
+    display: none;
+    @include rwd($xl) {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      position: fixed;
+      top:0;
+      left:0;
+      z-index: 96;
+    }
+  }
+  .headerBoxMenuOpenIcon {
+    font-size: 30px;
+    display: none;
+    @include rwd($xl) {
+      display: block;
+    }
+  }
   .headerBoxMenu {
     display: flex;
+    transition-duration: 0.2s;
     @include rwd($xl) {
-      display: none;
+      display: block;
+      width: 50%;
+      height: 100%;
+      background-color: $color1;
+      position: fixed;
+      top:0;
+      right:-50%;
+      z-index: 97;
+      box-sizing: border-box;
+      border-width: 0 0 0 3px;
+      border-color: #fff;
+      border-style: solid;
+      box-shadow: 0 0 30px #000 inset;
+    }
+  }
+  .headerBoxMenuOpen {
+    @include rwd($xl) {
+      right: 0;
     }
   }
   
@@ -132,6 +170,15 @@ img {
     color:#fff;
     &:hover {
       border-color: #fff;
+    }
+    @include rwd($xl) {
+      width: 100%;
+      display: block;
+      padding: 10px 20px;
+      &:hover {
+        background-color: #fff;
+        color:$color1;
+      }
     }
   }
 }
@@ -616,9 +663,13 @@ img {
     align-items: center;
     justify-content: space-between;
     font-size: 25px;
+    @include rwd($lg) {
+      height: auto;
+    }
   }
   .QAListItemTitleText {
     padding: 16px 40px;
+    word-break: break-all;
   }
   .QAListItemTitleOpen {
     width: 72px;
@@ -633,6 +684,10 @@ img {
     color:#4B4B4B;
     font-size: 50px;
     cursor: pointer;
+    @include rwd($lg) {
+      border-width: 0px;
+      background-color: transparent;
+    }
   }
   .QAListItemTitleOpenIcon {
     transition-duration: 0.2s;
