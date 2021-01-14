@@ -15,10 +15,15 @@ const routes = [
     component: () => import('../views/Introduction.vue')
   },
   {
+    path: '/QA',
+    name: 'QA',
+    component: () => import('../views/QA.vue')
+  },
+  {
     path: '/Page1',
     name: 'Page1',
     component: () => import('../views/Page1.vue')
-  }
+  },
 ]
 
 const router = new VueRouter({

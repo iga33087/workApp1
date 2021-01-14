@@ -7,11 +7,11 @@
       </div>
       <div class="headerBoxTitle" v-if="title">绿色全民娱乐 公平竞技棋牌APP</div>
       <div class="headerBoxMenu">
-        <div class="headerBoxMenuItem">HOME</div>
-        <div class="headerBoxMenuItem">游戏特色</div>
-        <div class="headerBoxMenuItem">游戏介绍</div>
-        <div class="headerBoxMenuItem">下载游戏</div>
-        <div class="headerBoxMenuItem">游戏QA</div>
+        <router-link :to="{'path':'/'}" class="headerBoxMenuItem">HOME</router-link>
+        <router-link :to="{'path':'/'}" class="headerBoxMenuItem">游戏特色</router-link>
+        <router-link :to="{'path':'/Introduction'}" class="headerBoxMenuItem">游戏介绍</router-link>
+        <router-link :to="{'path':'/'}" class="headerBoxMenuItem">下载游戏</router-link>
+        <router-link :to="{'path':'/QA'}" class="headerBoxMenuItem">游戏QA</router-link>
       </div>
     </div>
   </div>

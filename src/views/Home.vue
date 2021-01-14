@@ -18,19 +18,19 @@
             <div class="homeBoxContentItemType1Text">斗智斗牌<br>烧脑战争</div>
           </router-link>
           <router-link class="homeBoxContentItemType1" :to="{path:'/Page1'}">
-            <img class="homeBoxContentItemType1Img" src="@/assets/img/logo//gameLogo5.png">
+            <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo5.png">
             <div class="homeBoxContentItemType1Text">全民接战<br>极速刺激</div>
           </router-link>
           <router-link class="homeBoxContentItemType1" :to="{path:'/Page1'}">
-            <img class="homeBoxContentItemType1Img" src="@/assets/img/logo//gameLogo4.png">
+            <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo3.png">
             <div class="homeBoxContentItemType1Text">运气拼点<br>由底翻身</div>
           </router-link>
           <router-link class="homeBoxContentItemType1" :to="{path:'/Page1'}">
-            <img class="homeBoxContentItemType1Img" src="@/assets/img/logo//gameLogo3.png">
+            <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo4.png">
             <div class="homeBoxContentItemType1Text">公牌作主<br>人面赢家</div>
           </router-link>
           <router-link class="homeBoxContentItemType1" :to="{path:'/Page1'}">
-            <img class="homeBoxContentItemType1Img" src="@/assets/img/logo//gameLogo2.png">
+            <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo2.png">
             <div class="homeBoxContentItemType1Text">中国德州<br>公平呐喊</div>
           </router-link>
         </div>
@@ -55,7 +55,9 @@
       <div class="homeBox">
         <HomeBoxTitle text="享受反客为主的乐趣"/>
         <div class="homeBoxContent homeBoxContent3">
-          <div class="homeBoxContentVideo"></div>
+          <video class="homeBoxContentVideo" controls>
+            <source src="@/assets/video/game.mp4" type="video/mp4">
+          </video>
           <img class="homeBoxContentQR" src="@/assets/img/QR.jpg">
           <div class="homeBoxContentInfo">
             <img class="homeBoxContentInfoImg" src="@/assets/img/download1.png">

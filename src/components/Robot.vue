@@ -8,7 +8,7 @@
 export default {
   methods: {
     open() {
-      window.open("https://t.me/telegram");
+      window.open("https://t.me/jlhuyu888");
     }
   }
 }
