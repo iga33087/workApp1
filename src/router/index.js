@@ -31,7 +31,9 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
   scrollBehavior (to) {
-    return { selector: to.hash }
+    if(to.hash) {
+      return { selector: to.hash }
+    }
   }
 })
 
