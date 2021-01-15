@@ -35,7 +35,7 @@
           </router-link>
         </div>
       </div>
-      <div class="homeBox">
+      <div id="homeBox2" class="homeBox">
         <HomeBoxTitle text="纯绿色娱乐"/>
         <div class="homeBoxContent2">
           <div class="homeBoxContentItemType2">
