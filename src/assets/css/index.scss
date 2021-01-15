@@ -55,16 +55,6 @@ img {
   width: 100%;
 }
 
-.robot {
-  width: 100px;
-  height: 100px;
-  position: fixed;
-  bottom:30px;
-  right:30px;
-  cursor: pointer;
-  z-index: 99;
-}
-
 .header {
   height: 200px;
   background-color: #f00;
@@ -405,6 +395,7 @@ img {
   }
   .homeBoxContent3 {
     display: flex;
+    align-items: center;
     @include rwd($md) {
       display: block;
     }
@@ -535,6 +526,7 @@ img {
   .gameListItem {
     width: 130px;
     height: 115px;
+    cursor: pointer;
     @include rwd($xl) {
       width: calc((100% / 4) - 10px);
       height: auto;
@@ -721,5 +713,31 @@ img {
     max-height: 500px;
     padding: 16px 40px;
     transition-duration: 0.2s;
+  }
+}
+
+.top {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom:120px;
+  right:20px;
+  z-index: 98;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  transition-duration: 0.2s;
+  &:hover {
+    box-shadow: 0 0 10px #222 inset;
+    background-color: rgba(255,255,255,0.8);
+    color:#000;
+  }
+  .topIcon {
+    font-size: 50px;
+    margin-top: 5px;
   }
 }

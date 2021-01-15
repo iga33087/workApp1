@@ -26,9 +26,6 @@ export default {
     return {
       isOpen:false
     }
-  },
-  created() {
-    console.log(this.$router.scrollBehavior)
   }
 }
 </script>

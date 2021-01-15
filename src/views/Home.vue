@@ -58,11 +58,19 @@
           <video class="homeBoxContentVideo" controls>
             <source src="@/assets/video/Home_movie.mp4" type="video/mp4">
           </video>
-          <img class="homeBoxContentQR" src="@/assets/img/QR.jpg">
+          <a class="homeBoxContentQR" href="https://838461.889646544754624.site:9020/ntx/index.html?type=2&houseId=666&userId=2697782&PID=ntx">
+            <img src="@/assets/img/QR.jpg">
+          </a>
           <div class="homeBoxContentInfo">
-            <img class="homeBoxContentInfoImg" src="@/assets/img/download1.png">
-            <img class="homeBoxContentInfoImg" src="@/assets/img/download2.png">
-            <div class="homeBoxContentInfoText">立即下载<br>畅游扑克世界</div>
+            <a class="homeBoxContentQR" href="https://838461.889646544754624.site:9020/ntx/index.html?type=2&houseId=666&userId=2697782&PID=ntx">
+              <img class="homeBoxContentInfoImg" src="@/assets/img/download1.png">
+            </a>
+            <a class="homeBoxContentQR" href="https://838461.889646544754624.site:9020/ntx/index.html?type=2&houseId=666&userId=2697782&PID=ntx">
+              <img class="homeBoxContentInfoImg" src="@/assets/img/download2.png">
+            </a>
+            <a class="homeBoxContentQR" href="https://838461.889646544754624.site:9020/ntx/index.html?type=2&houseId=666&userId=2697782&PID=ntx">
+              <div class="homeBoxContentInfoText">立即下载<br>畅游扑克世界</div>
+            </a>
           </div>
         </div>
       </div>

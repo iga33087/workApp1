@@ -4,7 +4,7 @@
     <div class="content">
       <HomeBoxTitle text="游戏介绍" />
       <div class="gameList">
-        <div class="gameListItem" v-for="(item,index) in Object.keys(gameInfo)" :key="index" @click="infoNum=item;$forceUpdate()">
+        <div class="gameListItem" v-for="(item,index) in Object.keys(gameInfo)" :key="index" @click="infoNum=item;toContent();$forceUpdate()">
           <img :src="require('@/assets/img/logo/'+gameInfo[item].logo+'.png')">
         </div>
       </div>
@@ -248,6 +248,12 @@ export default {
   },
   created() {
     document.body.style.backgroundImage="url('img/homeBg.png')"
+  },
+  methods: {
+    toContent() {
+      let top=document.querySelectorAll(".introductionContent")[0].offsetTop-10
+      window.scrollTo(0, top);
+    }
   }
 }
 </script>
