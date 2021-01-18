@@ -26,7 +26,6 @@ html,body {
   padding: 0;
   font-family: 'Noto Sans SC','Microsoft YaHei';
   background-image: url("../img/homeBg.png");
-  background-repeat: no-repeat;
   background-size: 100% 100%;
   scroll-behavior: smooth;
 }
@@ -64,7 +63,7 @@ img {
   display: flex;
   @include rwd($xl) {
     height: 100px;
-    padding: 0 10px;
+    padding: 0 20px;
     background-size: 100% 100px;
   }
   .headerBox {
@@ -87,8 +86,8 @@ img {
     height: 107px;
     margin: 0 22px 0 0;
     @include rwd($xl) {
-      width: 80px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
     }
   }
 
@@ -325,8 +324,11 @@ img {
   }
   .el-carousel__container {
     height: 566px;
-    @include rwd($xl) {
-      height: 200px;
+    @include rwd($lg) {
+      height: 300px;
+    }
+    @include rwd($md) {
+      height: 150px;
     }
   }
 }
@@ -478,6 +480,9 @@ img {
   @include rwd($md) {
     width: 148px;
     height: 148px;
+    box-sizing: border-box;
+    padding: 30px;
+    font-size: 12px;
   }
 }
 

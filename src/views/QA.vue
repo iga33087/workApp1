@@ -34,11 +34,9 @@ export default {
   data() {
     return {
       QAList: [
-        {title:"1111",more:"111111111112",isOpen:false},
-        {title:"1111",more:"111111111112",isOpen:false},
-        {title:"1111",more:"111111111112",isOpen:false},
-        {title:"1111",more:"111111111112",isOpen:false},
-        {title:"1111",more:"111111111112",isOpen:false},
+        {title:"常見問題",type:[
+          {title:"類型一"},
+        ]}
       ]
     }
   },
