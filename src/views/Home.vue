@@ -13,23 +13,23 @@
       <div class="homeBox">
         <HomeBoxTitle text="公平绿色竞技 棋牌APP第一选择"/>
         <div class="homeBoxContent">
-          <router-link class="homeBoxContentItemType1" :to="{path:'/Page1'}">
+          <router-link class="homeBoxContentItemType1" :to="{path:'/'}">
             <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo1.png">
             <div class="homeBoxContentItemType1Text">斗智斗牌<br>烧脑战争</div>
           </router-link>
-          <router-link class="homeBoxContentItemType1" :to="{path:'/Page1'}">
+          <router-link class="homeBoxContentItemType1" :to="{path:'/'}">
             <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo5.png">
             <div class="homeBoxContentItemType1Text">全民接战<br>极速刺激</div>
           </router-link>
-          <router-link class="homeBoxContentItemType1" :to="{path:'/Page1'}">
+          <router-link class="homeBoxContentItemType1" :to="{path:'/'}">
             <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo3.png">
             <div class="homeBoxContentItemType1Text">运气拼点<br>由底翻身</div>
           </router-link>
-          <router-link class="homeBoxContentItemType1" :to="{path:'/Page1'}">
+          <router-link class="homeBoxContentItemType1" :to="{path:'/'}">
             <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo4.png">
             <div class="homeBoxContentItemType1Text">公牌作主<br>人面赢家</div>
           </router-link>
-          <router-link class="homeBoxContentItemType1" :to="{path:'/Page1'}">
+          <router-link class="homeBoxContentItemType1" :to="{path:'/'}">
             <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo2.png">
             <div class="homeBoxContentItemType1Text">中国德州<br>公平呐喊</div>
           </router-link>
@@ -39,16 +39,16 @@
         <HomeBoxTitle text="纯绿色娱乐"/>
         <div class="homeBoxContent2">
           <div class="homeBoxContentItemType2">
-            24小时技术客服支持<br>秒问秒回 火速处理
+            24HR线上客服<br>火速处理问题
           </div>
           <div class="homeBoxContentItemType2">
-            专业蓝光连线技术<br>5G流畅
+            5G蓝光连线<br>API切换迅速
           </div>
           <div class="homeBoxContentItemType2">
-            BAT级服务器终端<br>客户连结
+            6EB存储终端<br>高容顺畅连结
           </div>
           <div class="homeBoxContentItemType2">
-            绿色公平竞技<br>健康扑克游戏
+            真人用户竞技<br>健康扑克游戏
           </div>
         </div>
       </div>
@@ -59,7 +59,7 @@
             <source src="@/assets/video/Home_movie.mp4" type="video/mp4">
           </video>
           <a class="homeBoxContentQR" href="https://838461.889646544754624.site:9020/ntx/index.html?type=2&houseId=666&userId=2697782&PID=ntx">
-            <img src="@/assets/img/QR.jpg">
+            <img class="homeBoxContentQRImg" src="@/assets/img/QR.jpg">
           </a>
           <div class="homeBoxContentInfo">
             <a class="homeBoxContentQR" href="https://838461.889646544754624.site:9020/ntx/index.html?type=2&houseId=666&userId=2697782&PID=ntx">

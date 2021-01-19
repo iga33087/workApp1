@@ -67,6 +67,9 @@ img {
     padding: 0 20px;
     background-size: 100% 100px;
   }
+  @include rwd($xl) {
+    margin: 0 0 20px 0;
+  }
   .headerBox {
     width: 1200px;
     box-sizing: border-box;
@@ -87,13 +90,13 @@ img {
     height: 107px;
     margin: 0 22px 0 0;
     @include rwd($xl) {
-      width: 60px;
+      width: 70px;
       height: 60px;
     }
   }
 
   .headerBoxLogoText {
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     color:#fff;
   }
@@ -175,10 +178,10 @@ img {
 }
 
 .footer {
-  height: 200px;
+  height: 100px;
   background-image: url("../img/footer.png");
   background-repeat: no-repeat;
-  background-size: 100% 200px;
+  background-size: 100% 100px;
   color:#fff;
   display: flex;
   font-size: 30px;
@@ -188,12 +191,19 @@ img {
   @include rwd($xl) {
     font-size: 1rem;
   }
+  @include rwd($md) {
+    background-size: auto;
+  }
   .footerBoxTitle {
+    font-size: 20px;
+    @include rwd($md) {
+      font-size: 15px;
+    }
   }
   .footerList {
     display: flex;
     justify-content: center;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
   }
   .footerListItem {
     margin: 0 20px 0 0;
@@ -205,6 +215,9 @@ img {
     color:#fff;
     &:hover {
       border-color: #fff;
+    }
+    @include rwd($md) {
+      font-size: 15px;
     }
   }
 }
@@ -303,10 +316,33 @@ img {
   bottom:20px;
   right:20px;
   z-index: 98;
+  opacity: 0.5;
   cursor: pointer;
+  transition-duration: 0.2s;
+  @include rwd($md) {
+    width: 60px;
+    height: 60px;
+  }
+  .robotX {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:-10px;
+    right:-10px;
+    background-color: #fff;
+    border-radius: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+  }
   .robotImg {
     width: 100%;
     height: 100%;
+  }
+  &:hover {
+    opacity: 1;
   }
 }
 
@@ -314,7 +350,8 @@ img {
   margin: 0 0 70px 0;
   box-shadow: 0 0 30px #000;
   @include rwd($md) {
-    margin: 0 0 32px 0;
+    height: 0px;
+    margin: 0;
   }
   .homeCarouselItem {
     height: 100%;
@@ -396,24 +433,34 @@ img {
       border: 0px;
       background-color: transparent;
     }
+    @include rwd($md) {
+      margin: 0 0 50px 0;
+    }
   }
   .homeBoxContent3 {
     display: flex;
     align-items: center;
     @include rwd($md) {
-      display: block;
+      display: flex;
+      flex-wrap: unset;
     }
   }
   .homeBoxContentQR {
-    width: calc(25% - 2%);
+    width: calc(25%);
     @include rwd($xl) {
       width: 100%;
       height: auto;
-      margin: 0 0 10px 0;
+      margin: 0 20px 10px 0;
+    }
+  }
+  .homeBoxContentQRImg {
+    @include rwd($md) {
+      width: 177px;
+      height: 177px;
     }
   }
   .homeBoxContentInfo {
-    width: 25%;
+    width: 22%;
     @include rwd($xl) {
       width: 100%;
       height: auto;
@@ -421,15 +468,18 @@ img {
   }
   .homeBoxContentInfoImg {
     @include rwd($xl) {
-      width: 100%;
+      width: 80%;
       height: auto;
-      margin: 0 0 10px 0;
+      margin: 0 0 10px 8%;
     }
   }
   .homeBoxContentInfoText {
     color:#fff;
     font-size: 36px;
     text-align: center;
+    @include rwd($md) {
+      font-size: 20px;
+    }
   }
   .homeBoxContentVideo {
     width: calc(50% - 2%);
@@ -446,9 +496,9 @@ img {
   color:#fff;
   background-size: 100% 100%;
   @include rwd($lg) {
-    width: 50%;
+    width: 48%;
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 0 20px 0;
   }
   .homeBoxContentItemType1Img {
     width: 150px;
@@ -552,6 +602,9 @@ img {
       padding: 30px;
       font-size: 20px;
     }
+    @include rwd($md) {
+      font-size: 16px;
+    }
   }
   .introductionContentText {
     line-height: 45px;
@@ -638,8 +691,12 @@ img {
       padding: 20px;
     }
   }
+  .QABoxItem {
+    margin: 0 0 40px 0;
+  }
   .QABoxTitle {
     font-size: 45px;
+    font-weight: bold;
     margin: 50px 0 20px 0;
     border-width: 0 0 1px 0;
     border-style: solid;
@@ -660,7 +717,7 @@ img {
     padding: 6px 30px;
     border: 1px solid #4B4B4B;
     box-sizing: border-box;
-    font-size: 30px;
+    font-size: 25px;
     margin: 0 17px 17px 0;
     cursor: pointer;
     transition-duration: 0.2s;
@@ -697,7 +754,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 25px;
+    font-size: 22px;
     cursor: pointer;
     @include rwd($lg) {
       height: auto;
@@ -708,6 +765,9 @@ img {
     word-break: break-all;
     @include rwd($lg) {
       font-size: 18px;
+    }
+    @include rwd($md) {
+      padding: 16px 20px;
     }
   }
   .QAListItemTitleOpen {
@@ -773,6 +833,10 @@ img {
     box-shadow: 0 0 10px #222 inset;
     background-color: rgba(255,255,255,0.8);
     color:#000;
+  }
+    @include rwd($md) {
+    width: 60px;
+    height: 60px;
   }
   .topIcon {
     font-size: 50px;
@@ -872,7 +936,7 @@ img {
     width: 220px;
     margin: 0 0 7px 0;
     @include rwd($md) {
-      width: 150px;
+      width: 120px;
     }
   }
   .downloadLinkItemText {
@@ -880,7 +944,7 @@ img {
     color:#fff;
     text-align: center;
     @include rwd($md) {
-      font-size: 20px;
+      font-size: 16px;
     }
   }
   .downloadInfoMenu {
@@ -929,6 +993,7 @@ img {
     justify-content: center;
     flex-wrap: wrap;
     padding: 10px 0;
+    margin: 20px 0;
     @include rwd($lg) {
       display: block;
     }
@@ -936,20 +1001,28 @@ img {
   .introductionContentTextImg {
     width: 40%;
     @include rwd($lg) {
-      width: 100%;
+      width: 80%;
+      margin: 0 0 0 10%;
     }
   }
   .introductionContentTextImg2 {
     width: 30%;
     margin: 0 20px 0 0;
     @include rwd($lg) {
-      width: 100%;
-      margin: 0;
+      width: 80%;
+      margin: 0 0 0 10%;
     }
   }
   .introductionContentTextImg3 {
     width: calc(100% / 4);
     @include rwd($lg) {
+      width: 80%;
+    }
+  }
+  .introductionContentTextImg4 {
+    width: 60%;
+    margin: 20px 0 0 0;
+    @include rwd($md) {
       width: 100%;
     }
   }
@@ -968,6 +1041,9 @@ img {
     @include rwd($xl) {
       padding: 30px;
       font-size: 20px;
+    }
+    @include rwd($md) {
+      font-size: 16px;
     }
   }
   .introductionContentText {

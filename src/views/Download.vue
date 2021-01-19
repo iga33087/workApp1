@@ -35,8 +35,8 @@
             </div>
             <div>3.帐号注册：进入游戏大厅点击「帐号注册」输入资料后即可开始游戏</div>
             <div class="introductionContentTextImgBox">
-              <img class="introductionContentTextImg" src="@/assets/img/install/IOS3.png">
-              <img class="introductionContentTextImg" src="@/assets/img/install/IOS4.png">
+              <img class="introductionContentTextImg introductionContentTextImg4" src="@/assets/img/install/IOS3.png">
+              <img class="introductionContentTextImg introductionContentTextImg4" src="@/assets/img/install/IOS4.png">
             </div>
             <div>4.其他：其他任何问题点击网站或APP内的24HR客服处理</div>
           </div>
