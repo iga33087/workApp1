@@ -927,7 +927,9 @@ img {
     align-items: center;
     flex-direction: column;
     &:first-child {
+      margin: 0px;
       @include rwd($md) {
+        margin: 0px;
       }
     }
   }
