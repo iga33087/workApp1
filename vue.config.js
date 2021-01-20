@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: '/workApp1/'
+  publicPath: '.'
 }
