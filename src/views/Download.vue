@@ -6,14 +6,14 @@
         <HomeBoxTitle text="游戏下载" />
         <div class="homeBoxContent">
           <div class="downloadLink">
-            <div class="downloadLinkItem">
+            <!--<div class="downloadLinkItem">
               <img class="downloadLinkItemImg" src="@/assets/img/logo/downloadLogo.png">
               <div class="downloadLinkItemText">久乐互娱专属修复工具</div>
-            </div>
-            <div class="downloadLinkItem">
+            </div>-->
+            <a href="https://838461.889646544754624.site:9020/ntx/index.html?type=2&houseId=666&userId=2697782&PID=ntx" class="downloadLinkItem">
               <img class="downloadLinkItemImg" src="@/assets/img/logo/downloadLogo.png">
               <div class="downloadLinkItemText">久乐互娱客户端</div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
