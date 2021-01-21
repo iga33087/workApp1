@@ -316,13 +316,11 @@ img {
   bottom:20px;
   right:20px;
   z-index: 98;
-  opacity: 0.5;
   cursor: pointer;
   transition-duration: 0.2s;
   @include rwd($md) {
     width: 60px;
     height: 60px;
-    opacity: 1;
   }
   .robotX {
     width: 30px;
@@ -341,9 +339,48 @@ img {
   .robotImg {
     width: 100%;
     height: 100%;
+    opacity: 0.5;
+    transition-duration: 0.2s;
+    &:hover {
+      opacity: 1;
+    }
   }
-  &:hover {
-    opacity: 1;
+  .robotBlack {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 99999999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .robotBlackBox {
+
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    z-index: 99999999999;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .robotBlackBoxTitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .robotBlackBoxTitleImg {
+    width: 50px;
+    height: 50px;
+    margin: 0 20px 0 0;
+  }
+  .robotBlackBoxContentText {
+    text-align: center;
+  }
+  .robotBlackBoxContentImg {
+    width: 300px;
   }
 }
 
@@ -548,7 +585,7 @@ img {
   position: absolute;
   bottom:45px;
   left:113px;
-  z-index: 98;
+  z-index: 9;
   @include rwd($xl) {
     display: none;
   }
