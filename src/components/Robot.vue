@@ -14,7 +14,7 @@ export default {
   },
   methods: {
     open() {
-      window.open("https://t.me/jlhuyu888");
+      window.open("https://u.wechat.com/IGrEG2cOi2L3Rh1f0IhIeIY");
     }
   }
 }
