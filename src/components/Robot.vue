@@ -1,10 +1,13 @@
 <template>
-  <div class="robot" @click="open" v-if="show">
+  <div class="robot" v-if="show">
     <div class="robotBlack" @click.stop="open" v-if="showBox">
-      <div class="robotBlackBox">
+      <div class="robotBlackBox" @click.stop>
         <div class="robotBlackBoxTitle">
-          <img class="robotBlackBoxTitleImg" src="@/assets/img/logo/homeLogo.png">
-          <div>請掃QR Code</div>
+          <div class="robotBlackBoxTitleInfo">
+            <img class="robotBlackBoxTitleImg" src="@/assets/img/logo/homeLogo.png">
+            <div>請掃QR Code</div>
+          </div>
+          <i class="el-icon-close robotBlackBoxTitleX" @click="open" />
         </div>
         <div class="robotBlackBoxContent">
           <img class="robotBlackBoxContentImg" src="@/assets/img/客服wechat.jpg">
@@ -13,7 +16,7 @@
       </div>
     </div>
     <i class="el-icon-close robotX" @click.stop="show=!show"/>
-      <img class="robotImg" src="@/assets/img/robot.png">
+      <img class="robotImg" @click="open" src="@/assets/img/robot.png">
   </div>
 </template>
 

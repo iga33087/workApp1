@@ -352,24 +352,35 @@ img {
     position: fixed;
     top:0;
     left:0;
-    z-index: 99999999999;
+    z-index: 998;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
   .robotBlackBox {
 
     border-radius: 10px;
     background-color: #fff;
     position: relative;
-    z-index: 99999999999;
+    z-index: 999;
     box-sizing: border-box;
     padding: 20px;
+    cursor: default;
   }
   .robotBlackBoxTitle {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+  }
+  .robotBlackBoxTitleInfo {
+    display: flex;
+    align-items: center;
+  }
+  .robotBlackBoxTitleX {
+    font-size: 25px;
+    cursor: pointer;
   }
   .robotBlackBoxTitleImg {
     width: 50px;
