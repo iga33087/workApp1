@@ -2,20 +2,20 @@
   <div class="form">
     <div class="formLeft">
       <div class="formLeftRow">
-        <el-input placeholder="姓名" class="margin"></el-input>
-        <el-input placeholder="手机号"></el-input>
+        <el-input placeholder="姓名" class="margin" v-model="form.name"></el-input>
+        <el-input placeholder="手机号" v-model="form.phone"></el-input>
       </div>
       <div class="formLeftRow">
-        <el-input placeholder="邮箱"></el-input>
+        <el-input placeholder="邮箱" v-model="form.email"></el-input>
       </div>
       <div class="formLeftRow">
-        <el-input placeholder="公司名"></el-input>
+        <el-input placeholder="公司名" v-model="form.company"></el-input>
       </div>
       <div class="formLeftRow">
-        <el-input placeholder="您的任何问题" type="textarea" :rows="4"></el-input>
+        <el-input placeholder="您的任何问题" type="textarea" :rows="4" v-model="form.content"></el-input>
       </div>
       <div class="formLeftRow">
-        <el-button icon="el-icon-position" class="formRightSub">送出</el-button>
+        <el-button icon="el-icon-position" class="formRightSub" @click="sub">送出</el-button>
       </div>
     </div>
     <div class="formRight">
@@ -26,6 +26,23 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      form: {
+        name:"",
+        phone:"",
+        email:"",
+        company:"",
+        content:"",
+        projectId:10
+      }
+    }
+  },
+  methods: {
+    async sub() {
+      await this.$api.postMail(this.form)
+      alert("表單送出成功")
+    }
+  }
 }
 </script>
