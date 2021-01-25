@@ -5,7 +5,7 @@
         <div class="robotBlackBoxTitle">
           <div class="robotBlackBoxTitleInfo">
             <img class="robotBlackBoxTitleImg" src="@/assets/img/logo/homeLogo.png">
-            <div>請掃QR Code</div>
+            <div>請扫QR Code</div>
           </div>
           <i class="el-icon-close robotBlackBoxTitleX" @click="open" />
         </div>
