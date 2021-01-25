@@ -11,7 +11,7 @@
       <div class="introductionContent">
         <HomeBoxTitle :text="infoNum" :showShadow="false" />
         <div class="introductionContentText" v-html="gameInfo[infoNum].content"></div>
-        <video class="introductionContentVideo" controls :src="require('@/assets/video/game/'+gameInfo[infoNum].video)"></video>
+        <video class="introductionContentVideo" controls autoplay muted="muted" :src="require('@/assets/video/game/'+gameInfo[infoNum].video)"></video>
       </div>
     </div>
     <Footer/>

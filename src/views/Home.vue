@@ -55,7 +55,7 @@
       <div class="homeBox">
         <HomeBoxTitle text="享受反客为主的乐趣"/>
         <div class="homeBoxContent homeBoxContent3">
-          <video class="homeBoxContentVideo" controls>
+          <video class="homeBoxContentVideo" controls autoplay muted="muted">
             <source src="@/assets/video/Home_movie.mp4" type="video/mp4">
           </video>
           <a class="homeBoxContentQR" href="https://838461.889646544754624.site:9020/ntx/index.html?type=2&houseId=666&userId=2697782&PID=ntx">

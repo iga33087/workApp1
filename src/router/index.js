@@ -30,6 +30,16 @@ const routes = [
     component: () => import('../views/Privacy.vue')
   },
   {
+    path: '/Article',
+    name: 'Article',
+    component: () => import('../views/Article.vue')
+  },
+  {
+    path: '/Article/:id',
+    name: 'ArticleDetail',
+    component: () => import('../views/ArticleDetail.vue')
+  },
+  {
     path: '/Page1',
     name: 'Page1',
     component: () => import('../views/Page1.vue')
