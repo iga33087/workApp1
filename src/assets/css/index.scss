@@ -1268,3 +1268,31 @@ img {
     border-radius: 2px;
   }
 }
+
+.ruleItem {
+  .ruleItemChilden {
+  }
+}
+
+.infoVideoLine {
+  font-size: 60px;
+  position: relative;
+  z-index: 3;
+  letter-spacing: 4px;
+  text-align: center;
+  font-weight: bold;
+  @include rwd($xl) {
+    display: none;
+  }
+  .infoVideoShadow {
+    width: 100%;
+    font-size: 60px;
+    position: absolute;
+    top:0;
+    right:0;
+    -webkit-text-fill-color:transparent;
+    letter-spacing: 4px;
+    text-shadow: 0 0 30px #000;
+    text-align: center;
+  }
+}
