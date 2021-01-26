@@ -2,6 +2,9 @@
   <div class="introduction">
     <Header :icon="'homeLogo.png'" />
     <div class="content">
+      <div class="introductionAnchor">
+        <div class="introductionAnchorItem" v-for="(item,index) in gameInfo[infoNum].rule" :key="index" @click="toLink('rule'+index)">{{item.content}}</div>
+      </div>
       <HomeBoxTitle text="游戏介绍" />
       <div class="gameList">
         <div class="gameListItem" v-for="(item,index) in Object.keys(gameInfo)" :key="index" @click="infoNum=item;toContent();$forceUpdate()">
@@ -12,7 +15,7 @@
         <HomeBoxTitle :text="infoNum" :showShadow="false" />
         <video class="introductionContentVideo" controls autoplay muted="muted" :src="require('@/assets/video/game/'+gameInfo[infoNum].video)"></video>
         <InfoVideoLine v-for="(item,index) in gameInfo[infoNum].title" :key="index" :text="item.text" :fontColor="item.fontColor" :borderColor="item.borderColor" />
-        <RuleItem :typeNone="true" v-for="(item,index) in gameInfo[infoNum].rule" :data="item" :key="infoNum+index" />
+        <RuleItem :typeNone="true" v-for="(item,index) in gameInfo[infoNum].rule" :id="'rule'+index" :data="item" :key="infoNum+index" />
       </div>
     </div>
     <Footer/>
@@ -45,7 +48,10 @@ export default {
     toContent() {
       let top=document.querySelectorAll(".introductionContent")[0].offsetTop-10
       window.scrollTo(0, top);
-    }
+    },
+    toLink(x) {
+      this.$router.push({'path':'/Introduction','hash':x,'query':{'time':new Date().getTime()}})
+    },
   }
 }
 </script>

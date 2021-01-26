@@ -666,6 +666,29 @@ img {
   .introductionContentVideo {
     width: 100%;
   }
+  .introductionAnchor {
+    position: fixed;
+    bottom:20px;
+    left:20px;
+    @include rwd($xl) {
+      display: none;
+    }
+  }
+  .introductionAnchorItem {
+    padding: 16px;
+    text-align: center;
+    color:#fff;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 2px #FFEF99 inset;
+    margin: 0 0 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    &:hover {
+      background-color: #FFEF99;
+      color:#000;
+    }
+  }
 }
 
 .QRBoxBottom {
