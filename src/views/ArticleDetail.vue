@@ -34,6 +34,9 @@ export default {
         time:"2021/01/25 10:00:00"
       }
     }
+  },
+  async created() {
+    this.data=await this.$api.getArticleById(this.$route.params.id)
   }
 }
 </script>

@@ -34,12 +34,13 @@ export default {
         email:"",
         company:"",
         content:"",
-        projectId:10
+        projectId:""
       }
     }
   },
   methods: {
     async sub() {
+      this.form.projectId=this.$store.state.projectId
       await this.$api.postMail(this.form)
       alert("表單送出成功")
     }

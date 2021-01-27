@@ -1132,6 +1132,9 @@ img {
 }
 
 .article {
+  .content {
+    margin-bottom: 20px;
+  }
   .introductionContent {
     display: flex;
     align-items: center;
@@ -1223,6 +1226,8 @@ img {
     }
   }
   .introductionContentInfoContent {
+    height: 400px;
+    overflow: hidden;
     @include rwd($sm) {
       display: none;
     }
@@ -1247,7 +1252,7 @@ img {
 
 .articleDetail {
   .content {
-    margin: 20px 0 0 0;
+    margin-top: 20px;
   }
   .introductionContent {
     padding: 40px 132px;
