@@ -6,7 +6,7 @@
       <router-link v-for="item in list" :to="{name:'ArticleDetail',params: { id: item.id }}" class="introductionContent" :key="item.id">
         <div class="introductionContentMore">詳細</div>
         <div class="introductionContentImgBox">
-          <img class="introductionContentImg" src="@/assets/img/install/IOS3.png">
+          <img class="introductionContentImg" :src="item.img ? item.img : require('@/assets/img/logo/downloadLogo.png')">
         </div>
         <div class="introductionContentInfo">
           <h3 class="introductionContentInfoTitle">
@@ -39,8 +39,10 @@ export default {
     }
   },
   async created() {
+    this.$store.dispatch("loading",true)
     let obj= {projectId:this.$store.state.projectId}
     this.list=await this.$api.getArticle(obj)
+    this.$store.dispatch("loading",false)
   }
 }
 </script>

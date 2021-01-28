@@ -5,7 +5,7 @@
       <div class="introductionContent">
         <HomeBoxTitle :text="data.title" :showShadow="false" />
         <div class="introductionContentArticleDetailInfo">
-          <div class="introductionContentArticleDetailInfoType">{{data.type}}</div>
+          <div class="introductionContentArticleDetailInfoType" v-if="data.type">{{data.type}}</div>
           <div class="introductionContentArticleDetailInfoTime">{{data.time}}</div>
         </div>
         <div class="introductionContentText" v-html="data.content"></div>
@@ -26,17 +26,17 @@ export default {
   },
   data() {
     return {
-      data: {
-        img:"http://julegaming.com/img/IOS3.276d0670.png",
-        title:"測試標題",
-        type:"公告",
-        content:"516516514564564165415615615516516514564564165415615615516516514564564165415615615516516514564564165415615615516516514564564165415615615516516514564564165415615615",
-        time:"2021/01/25 10:00:00"
-      }
+      data: {}
     }
   },
   async created() {
+    this.$store.dispatch("loading",true)
     this.data=await this.$api.getArticleById(this.$route.params.id)
+    this.$store.dispatch("loading",false)
+    if(!this.data) {
+      alert("查无此文!")
+      this.$router.go(-1)
+    }
   }
 }
 </script>

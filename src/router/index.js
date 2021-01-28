@@ -44,6 +44,12 @@ const routes = [
     name: 'Page1',
     component: () => import('../views/Page1.vue')
   },
+  {
+    path: '/Err404',
+    name: 'Err404',
+    component: () => import('../views/Err404.vue')
+  },
+  { path: '*', redirect: '/Err404' },  
 ]
 
 const router = new VueRouter({
