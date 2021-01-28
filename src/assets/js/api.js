@@ -1,5 +1,5 @@
 import axios from "axios"
-let baseUrl="https://uclickapi.herokuapp.com/"  //https://uclickapi.herokuapp.com/
+let baseUrl="http://220.135.96.47:81/"  //https://uclickapi.herokuapp.com/ http://220.135.96.47:81/
 
 export default {
   postMail(x) {
