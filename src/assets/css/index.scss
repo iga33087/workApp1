@@ -1350,6 +1350,24 @@ img {
 .err404 {
   height: 100%;
   .content {
-    height: calc(100% - 200px - 100px);
+  }
+  .err404Content {
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+    color:#fff;
+  }
+  .err404ContentText {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .err404ContentList {
+    text-align: center;
+  }
+  .err404ContentListItem {
+    display: block;
+    color:#fff;
+    margin-bottom: 10px;
+    cursor: pointer;
   }
 }
