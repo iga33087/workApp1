@@ -1369,5 +1369,8 @@ img {
     color:#fff;
     margin-bottom: 10px;
     cursor: pointer;
+    &:hover {
+      color:$fontColor2;
+    }
   }
 }
