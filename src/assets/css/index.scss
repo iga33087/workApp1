@@ -1373,4 +1373,8 @@ img {
       color:$fontColor2;
     }
   }
+  .err404ContentListItemIcon {
+    margin-right: 10px;
+    transform: rotate(90deg);
+  }
 }
