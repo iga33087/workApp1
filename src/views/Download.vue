@@ -10,10 +10,18 @@
               <img class="downloadLinkItemImg" src="@/assets/img/logo/downloadLogo.png">
               <div class="downloadLinkItemText">久乐互娱专属修复工具</div>
             </div>-->
-            <a href="https://838461.889646544754624.site:9020/ntx/index.html?type=2&houseId=666&userId=2697782&PID=ntx" class="downloadLinkItem">
-              <img class="downloadLinkItemImg" src="@/assets/img/logo/downloadLogo.png">
-              <div class="downloadLinkItemText">久乐互娱客户端</div>
-            </a>
+              <div class="downloadLinkItemBox">
+                <a href="https://838461.889646544754624.site:9020/ntx/index.html?type=2&houseId=666&userId=2697782&PID=ntx" class="downloadLinkItem">
+                  <img class="downloadLinkItemImg" src="@/assets/img/logo/downloadLogo.png">
+                  <div class="downloadLinkItemText">久乐互娱客户端<br>[点我下载]</div>
+                </a>
+              </div>
+              <div class="downloadLinkItemBox">
+                <a href="https://838461.889646544754624.site:9020/ntx/index.html?type=2&houseId=666&userId=2697782&PID=ntx" class="downloadLinkItem">
+                  <img class="downloadLinkItemImg" src="@/assets/img/QR.jpg">
+                  <div class="downloadLinkItemText">或扫QR Code</div>
+                </a>
+              </div>
           </div>
         </div>
       </div>

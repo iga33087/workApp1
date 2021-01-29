@@ -1015,6 +1015,12 @@ img {
     display: flex;
     justify-content: space-between;
   }
+  .downloadLinkItemBox {
+    margin-right: 20px;
+    &:last-child {
+      margin: 0;
+    }
+  }
   .downloadLinkItem {
     display: flex;
     align-items: center;

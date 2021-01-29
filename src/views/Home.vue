@@ -90,11 +90,11 @@ export default {
   data() {
     return {
       imgBoxList: [
-        {src:"imgBox1.png",link:""},
-        {src:"imgBox2.png",link:""},
-        {src:"imgBox3.png",link:""},
-        {src:"imgBox4.png",link:""},
-        {src:"imgBox5.png",link:""},
+        {src:"imgBox1.jpg",link:""},
+        {src:"imgBox2.jpg",link:""},
+        {src:"imgBox3.jpg",link:""},
+        {src:"imgBox4.jpg",link:""},
+        {src:"imgBox5.jpg",link:""},
       ]
     }
   },
