@@ -511,6 +511,7 @@ img {
   .homeBoxContent3 {
     display: flex;
     align-items: center;
+    justify-content: center;
     @include rwd($md) {
       display: flex;
       flex-wrap: unset;
@@ -518,6 +519,7 @@ img {
   }
   .homeBoxContentQR {
     width: calc(25%);
+    margin-right: 20px;
     @include rwd($xl) {
       width: 100%;
       height: auto;
@@ -560,7 +562,13 @@ img {
     }
   }
 }
-
+.homeVideo {
+  width: 100%;
+  margin-bottom: 70px;
+  @include rwd($xl) {
+    margin-bottom: 30px;
+  }
+}
 .homeBoxContentItemType1 {
   padding: 20px 12px;
   background-image: url("../img/homeBoxContentItemType1.png");
@@ -583,6 +591,9 @@ img {
   .homeBoxContentItemType1Text {
     font-size: 23px;
     text-align: center;
+  }
+  .homeBoxContentItemType1Video {
+    width: 100%;
   }
 }
 
