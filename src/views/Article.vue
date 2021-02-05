@@ -11,7 +11,7 @@
         <div class="introductionContentInfo">
           <h3 class="introductionContentInfoTitle">
             <div class="introductionContentInfoTitleBox">
-              <div class="introductionContentInfoTitleBoxType">{{item.type}}</div>
+              <div class="introductionContentInfoTitleBoxType">{{getProjectTitle(item.tagId)}}</div>
               <div class="introductionContentInfoTitleBoxText">{{item.title}}</div>
             </div>
             <span class="introductionContentInfoTitleTime">{{item.time}}</span>
@@ -35,14 +35,23 @@ export default {
   },
   data() {
     return {
-      list:[]
+      list:[],
+      tagList:[]
     }
   },
   async created() {
     this.$store.dispatch("loading",true)
     let obj= {projectId:this.$store.state.projectId}
     this.list=await this.$api.getArticle(obj)
+    this.tagList=await this.$api.TagByProjectId()
     this.$store.dispatch("loading",false)
+  },
+  methods: {
+    getProjectTitle(x) {
+      let arr=this.tagList.filter(res=> res.id==x)
+      let res=arr[0] ? arr[0].title : "分類不存在"
+      return res
+    },
   }
 }
 </script>
