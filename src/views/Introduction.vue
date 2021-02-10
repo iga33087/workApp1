@@ -1,5 +1,6 @@
 <template>
   <div class="introduction">
+    <h1 class="noneH1">九乐互娱 游戏介绍</h1>
     <Header :icon="'homeLogo.png'" />
     <div class="content">
       <div class="introductionAnchor">
@@ -8,7 +9,7 @@
       <HomeBoxTitle text="游戏介绍" />
       <div class="gameList">
         <div class="gameListItem" v-for="(item,index) in Object.keys(gameInfo)" :key="index" @click="infoNum=item;toContent();$forceUpdate()">
-          <img :src="require('@/assets/img/logo/'+gameInfo[item].logo+'.png')">
+          <img :src="require('@/assets/img/logo/'+gameInfo[item].logo+'.png')" :alt="item+'游戏介绍 、规则玩法'">
         </div>
       </div>
       <div class="introductionContent">

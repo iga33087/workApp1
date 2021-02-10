@@ -4,7 +4,7 @@
       <div class="robotBlackBox" @click.stop>
         <div class="robotBlackBoxTitle">
           <div class="robotBlackBoxTitleInfo">
-            <img class="robotBlackBoxTitleImg" src="@/assets/img/logo/homeLogo.png">
+            <img class="robotBlackBoxTitleImg" src="@/assets/img/logo/homeLogo.png" alt="九乐互娱官网app线上客服微信wechat weixin账号">
             <div>請扫QR Code</div>
           </div>
           <i class="el-icon-close robotBlackBoxTitleX" @click="open" />

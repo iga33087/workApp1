@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <h1 class="noneH1">九乐互娱 游戏特色</h1>
     <Header :icon="'homeLogo.png'" />
     <el-carousel class="homeCarousel" trigger="click">
       <QRBox/>
@@ -14,23 +15,23 @@
         <HomeBoxTitle text="公平绿色竞技 棋牌APP第一选择"/>
         <div class="homeBoxContent">
           <router-link class="homeBoxContentItemType1" :to="{path:'/'}">
-            <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo1.png">
+            <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo1.png" alt="十三张app游戏下载">
             <div class="homeBoxContentItemType1Text">斗智斗牌<br>烧脑战争</div>
           </router-link>
           <router-link class="homeBoxContentItemType1" :to="{path:'/'}">
-            <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo5.png">
+            <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo5.png" alt="牛牛app游戏下载">
             <div class="homeBoxContentItemType1Text">全民接战<br>极速刺激</div>
           </router-link>
           <router-link class="homeBoxContentItemType1" :to="{path:'/'}">
-            <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo3.png">
+            <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo3.png" alt="三公app游戏下载">
             <div class="homeBoxContentItemType1Text">运气拼点<br>由底翻身</div>
           </router-link>
           <router-link class="homeBoxContentItemType1" :to="{path:'/'}">
-            <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo4.png">
+            <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo4.png" alt="拼三张app游戏下载">
             <div class="homeBoxContentItemType1Text">公牌作主<br>人面赢家</div>
           </router-link>
           <router-link class="homeBoxContentItemType1" :to="{path:'/'}">
-            <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo2.png">
+            <img class="homeBoxContentItemType1Img" src="@/assets/img/logo/gameLogo2.png" alt="斗公牛app游戏下载">
             <div class="homeBoxContentItemType1Text">中国德州<br>公平呐喊</div>
           </router-link>
         </div>

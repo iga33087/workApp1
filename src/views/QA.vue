@@ -1,5 +1,6 @@
 <template>
   <div class="QA">
+    <h1 class="noneH1">九乐互娱 游戏QA</h1>
     <Header :icon="'homeLogo.png'"/>
     <div class="content">
       <div class="QABox">

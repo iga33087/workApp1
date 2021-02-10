@@ -1,5 +1,6 @@
 <template>
   <div class="article">
+    <h1 class="noneH1">九乐互娱热点内容</h1>
     <Header :icon="'homeLogo.png'"/>
     <div class="content">
       <HomeBoxTitle :text="'文章'" />

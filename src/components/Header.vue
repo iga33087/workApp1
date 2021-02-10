@@ -3,13 +3,13 @@
     <div class="headerBlack" v-if="isOpen" @click="isOpen=!isOpen"></div>
     <div class="headerBox">
       <router-link class="headerBoxLogo" :to="{'path':'/'}">
-        <img class="headerBoxLogoImg" :src="require('@/assets/img/logo/'+icon)">
-        <div class="headerBoxLogoText">久乐互娱</div>
+        <img class="headerBoxLogoImg" alt="久乐互娱官方icon" :src="require('@/assets/img/logo/'+icon)">
+        <div class="headerBoxLogoText">久乐互娱官方版网站</div>
       </router-link>
       <div class="headerBoxTitle" v-if="title">绿色全民娱乐 公平竞技棋牌APP</div>
       <div class="headerBoxMenu" :class="{'headerBoxMenuOpen':isOpen}">
         <router-link :to="{'path':'/'}" class="headerBoxMenuItem">HOME</router-link>
-        <router-link :to="{'path':'/Article'}" class="headerBoxMenuItem">文章</router-link>
+        <router-link :to="{'path':'/Article'}" class="headerBoxMenuItem">热点内容</router-link>
         <div class="headerBoxMenuItem" @click="toLink">游戏特色</div>
         <router-link :to="{'path':'/Introduction'}" class="headerBoxMenuItem">游戏介绍</router-link>
         <router-link :to="{'path':'/Download'}" class="headerBoxMenuItem">下载游戏</router-link>
